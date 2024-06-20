@@ -137,8 +137,11 @@ const Helper = () => {
 				console.log("submitMockedCheckISRCValidity status : ", result)
                 setMockedCheckISRCValidityStatus("Success")
 			}))
-			.catch(err => {console.log("submitMockedCheckISRCValidity error : ", err)})
-            setMockedCheckISRCValidityStatus("Failed")
+			.catch(err => {
+                console.log("submitMockedCheckISRCValidity error : ", err)
+                setMockedCheckISRCValidityStatus("Failed")
+            })
+            
 		}
 	}
 
